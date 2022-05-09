@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #373535;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    height: 5vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #b2b2b2, #618685);
+    border-bottom: 3px solid #333;
+}
+
+#logo{
+    height: 45px;
+    padding: 0 19px;
+    background: #333;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    padding: 5px;
+    margin: 0 19px;
+    list-style: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top{
+    height: 50vh;
+    background: linear-gradient(90deg, #b2b2b2, #618685);
+}
+
+
+#bottom{
+    height: 35vh;
+    background: linear-gradient(90deg, #866162, #ccc);
+    padding: 20px;
+}
+#bottom img{
+    height: 310px;
+    border-radius: 100%;
+}
+#bottom h2{
+    padding: 10px 0;
+
+}
+
+#bottom p{
+    padding: 10px 20px; 
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    background: linear-gradient(to right top,#775657, rgb(212, 173, 173));
+}
+
+#form h3{
+    color: #ccc;
+    padding: 40px 10px;
+}
+#form input{
+    margin: 20px;
+    padding: 10px;
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+}
+
+#form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(204, 204, 204, 0.816);
+    color: black;
+}
+
+#form button:hover{
+    cursor: pointer;
+    background: #ccc;
+}
+
+#form input:focus{
+    outline: none;
+}
+nav li:hover, #sel{
+    border-bottom: #333 solid 1px;
+    border-right: #333 solid 1px;
+    border-bottom-right-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+#output ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 20px;
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(to right bottom, rgb(212, 173, 173), #775657);
+}
+
+#output ul li, #output ul a{
+    color: rgb(38, 35, 35);
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#output ul a:hover{
+    color: blue;
+}
+
+#mid{
+    height: 10vh;
+    background: linear-gradient(90deg, #b2b2b2, #618685);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mid h1{
+    margin-bottom: 20px;
+}
+
+#errorMsg h2{
+    background: red;
+    color: #333;
+    border-radius: 15px;
+    padding: 10px;
+}

@@ -1,0 +1,1 @@
+Simple website project using all vanilla HTML, CSS, javaScript, and a web API. The website locates colleges and universities around the world and provides links to their homepage websites. 
