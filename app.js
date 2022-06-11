@@ -23,8 +23,7 @@ function myfunc(){
             <li>${data[0].name}</li>
             <a target="_blank">Take me to the website!</a>
         </ul>`
-        document.querySelector('a').setAttribute('href', `https://www.${data[0].domains[0]}`)
-
+        document.querySelector('a').setAttribute('href', `https://${checkWWW(data[0].domains[0])}`)
     })
     .catch(err=>{
         setErrorMsg(`No matches were found! Please check your information and try again.`)
@@ -43,4 +42,8 @@ function clear(){
     errorDiv.innerHTML = ''
     schoolInput.disabled = false
     countryInput.disabled = false
+}
+
+function checkWWW(websiteURL){
+    return websiteURL.slice(0,4) === "www."? websiteURL : "www."+websiteURL
 }
