@@ -14,7 +14,7 @@ function myfunc(){
     if(!schoolInput.value || !countryInput.value){
     setErrorMsg(`Please enter both COUNTRY and COLLEGE/UNIVERSITY`)
     }else{
-        fetch(`http://universities.hipolabs.com/search?country=${country}&name=${school}`)
+        fetch(`https://api.allorigins.win/raw?url=http://universities.hipolabs.com/search?country=${country}&name=${school}`)
     .then(res=> res.json()) 
     .then(data => {
         outputDiv.innerHTML = `<ul>
